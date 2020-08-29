@@ -1,0 +1,25 @@
+{
+    "cliente": [
+        {
+            "nome": "Caio",
+            "idade": 24,
+            "cpf": 18960718475,
+            "telefone": 998308550,
+            "email": "caiovfreitas@gmail.com"
+        },
+        {
+            "nome": "Leticia",
+            "idade": 22,
+            "cpf": 18960718476,
+            "telefone": 998308520,
+            "email": "leticia@gmail.com"
+        },
+        {
+            "nome": "Igor",
+            "idade": 20,
+            "cpf": 18960718477,
+            "telefone": 998308540,
+            "email": "igor@gmail.com"
+        }
+    ]
+}
