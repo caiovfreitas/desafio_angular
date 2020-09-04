@@ -1,0 +1,20 @@
+.footer {
+    max-height: 30px;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer .texto {
+    font-size: 10px;
+    font-weight: 300;
+    color: #aaaaaa;
+}
+
+.footer .texto i{
+    font-size: 12px;
+    font-weight: 200;
+    color: #aaaaaa;
+    vertical-align: middle;
+}
