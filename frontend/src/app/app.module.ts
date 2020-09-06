@@ -10,13 +10,15 @@ import { HeaderComponent } from './components/template/header/header.component';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './views/home/home.component';
+import { ClientsComponent } from './views/clients/clients.component';
+import { ClientCreateComponent } from './components/client/client-create/client-create.component';
 
 //Importações do Material Design
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
-import { ClientsComponent } from './views/clients/clients.component';
+import { MatButtonModule } from '@angular/material/button';
 
 
 
@@ -27,7 +29,8 @@ import { ClientsComponent } from './views/clients/clients.component';
     FooterComponent,
     NavComponent,
     HomeComponent,
-    ClientsComponent
+    ClientsComponent,
+    ClientCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,8 @@ import { ClientsComponent } from './views/clients/clients.component';
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
 
   ],
   providers: [],
