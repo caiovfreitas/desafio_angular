@@ -17,6 +17,11 @@
     padding-left: 25px;
 }
 
+.header .title-group span {
+    padding-left: 10px;
+    font-weight: 200;
+}
+
 .header .title-group i {
     padding-right: 0.5px;
 }
