@@ -11,12 +11,12 @@ import { Router } from '@angular/router';
 })
 export class ClientCreateComponent implements OnInit {
 
-  cliente: Client = {
-    nome: "",
+  client: Client = {
+    nome: '',
     idade: null,
     cpf: null,
     telefone: null,
-    email: ""
+    email: ''
   }
 
   constructor(private clientService: ClientService,
@@ -27,7 +27,7 @@ export class ClientCreateComponent implements OnInit {
   }
 
   createClient(): void {
-    this.clientService.create(this.cliente).subscribe(() => {
+    this.clientService.create(this.client).subscribe(() => {
       this.clientService.showMessage('Cadastro Realizado')
     })
   }

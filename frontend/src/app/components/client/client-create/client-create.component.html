@@ -1,21 +1,22 @@
 <mat-card>
     <mat-card-title>Novo Cliente</mat-card-title>
+    <mat-card-subtitle>Preencha os dados abaixo para cadastrar um novo cliente no sistema.</mat-card-subtitle>
     <form>
 
         <mat-form-field>
-            <input matInput placeHolder="Nome" rosa>
+            <input matInput placeholder="Nome" [(ngModel)]="client.nome" name="nome">
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeHolder="Idade">
+            <input matInput placeholder="Idade" [(ngModel)]="client.idade" name="idade">
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeHolder="CPF">
+            <input matInput placeholder="CPF" [(ngModel)]="client.cpf" name="cpf">
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeHolder="Telefone">
+            <input matInput placeholder="Telefone" [(ngModel)]="client.telefone" name="telefone">
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeHolder="E-mail">
+            <input matInput placeholder="E-mail" [(ngModel)]="client.email" name="email">
         </mat-form-field>
 
     </form>

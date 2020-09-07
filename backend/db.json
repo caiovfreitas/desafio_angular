@@ -1,36 +1,44 @@
 {
-    "cliente": [
-        {
-            "id": 1,
-            "nome": "Caio",
-            "idade": 24,
-            "cpf": 18960718475,
-            "telefone": 998308550,
-            "email": "caiovfreitas@gmail.com"
-        },
-        {
-            "id": 2,
-            "nome": "Leticia",
-            "idade": 22,
-            "cpf": 18960718476,
-            "telefone": 998308520,
-            "email": "leticia@gmail.com"
-        },
-        {
-            "id": 3,
-            "nome": "Igor",
-            "idade": 20,
-            "cpf": 18960718477,
-            "telefone": 998308540,
-            "email": "igor@gmail.com"
-        },
-        {
-            "nome": "Lara",
-            "idade": 7,
-            "cpf": 99999999999,
-            "telefone": 81999999999,
-            "email": "lara@gmail.com",
-            "id": 4
-        }
-    ]
+  "cliente": [
+    {
+      "id": 1,
+      "nome": "Caio",
+      "idade": 24,
+      "cpf": 18960718475,
+      "telefone": 998308550,
+      "email": "caiovfreitas@gmail.com"
+    },
+    {
+      "id": 2,
+      "nome": "Leticia",
+      "idade": 22,
+      "cpf": 18960718476,
+      "telefone": 998308520,
+      "email": "leticia@gmail.com"
+    },
+    {
+      "id": 3,
+      "nome": "Igor",
+      "idade": 20,
+      "cpf": 18960718477,
+      "telefone": 998308540,
+      "email": "igor@gmail.com"
+    },
+    {
+      "nome": "Lara",
+      "idade": 7,
+      "cpf": 99999999999,
+      "telefone": 81999999999,
+      "email": "lara@gmail.com",
+      "id": 4
+    },
+    {
+      "nome": "Zé",
+      "idade": "21",
+      "cpf": "22222222222",
+      "telefone": "222222222",
+      "email": "ze@gml.com",
+      "id": 5
+    }
+  ]
 }
