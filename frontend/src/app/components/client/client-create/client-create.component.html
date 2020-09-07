@@ -1,7 +1,31 @@
-<button class="btnCadastrar" mat-raised-button (click)="createClient()">
-    Cadastrar
-</button>
+<mat-card>
+    <mat-card-title>Novo Cliente</mat-card-title>
+    <form>
 
-<button class="btnCancelar" mat-raised-button (click)="createClient()">
-    Cancelar
-</button>
+        <mat-form-field>
+            <input matInput placeHolder="Nome" rosa>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeHolder="Idade">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeHolder="CPF">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeHolder="Telefone">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeHolder="E-mail">
+        </mat-form-field>
+
+    </form>
+
+    <button class="btnCadastrar" mat-raised-button (click)="createClient()">
+        Cadastrar
+    </button>
+
+    <button class="btnCancelar" mat-raised-button (click)="cancelClient()">
+        Limpar
+    </button>
+
+</mat-card>

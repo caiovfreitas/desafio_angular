@@ -8,3 +8,8 @@ button{
 .btnCadastrar {
     background-color: #e91e63;
 }
+
+.mat-form-field {
+    /*change color of label*/
+    color: red !important;
+}
