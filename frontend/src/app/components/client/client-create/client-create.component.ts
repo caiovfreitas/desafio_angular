@@ -27,9 +27,13 @@ export class ClientCreateComponent implements OnInit {
   }
 
   createClient(): void {
-    this.clientService.create(this.client).subscribe(() => {
-      this.clientService.showMessage('Cadastro Realizado')
-    })
+    if (
+      this.client
+    )
+
+      this.clientService.create(this.client).subscribe(() => {
+        this.clientService.showMessage('Cadastro Realizado')
+      })
   }
 
   cancelClient(): void {
