@@ -4,19 +4,21 @@
     <form>
 
         <mat-form-field>
-            <input matInput placeholder="Nome" [(ngModel)]="client.nome" name="nome">
+            <input matInput placeholder="Nome" [(ngModel)]="client.nome" name="nome" autocomplete="off"
+                autocapitalize="on" required>
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Idade" [(ngModel)]="client.idade" name="idade">
+            <input matInput placeholder="Idade" [(ngModel)]="client.idade" name="idade" autocomplete="off" required>
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="CPF" [(ngModel)]="client.cpf" name="cpf">
+            <input matInput placeholder="CPF" [(ngModel)]="client.cpf" name="cpf" autocomplete="off" required>
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Telefone" [(ngModel)]="client.telefone" name="telefone">
+            <input matInput placeholder="Telefone" [(ngModel)]="client.telefone" name="telefone" autocomplete="off"
+                required>
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="E-mail" [(ngModel)]="client.email" name="email">
+            <input matInput placeholder="E-mail" [(ngModel)]="client.email" name="email" autocomplete="off" required>
         </mat-form-field>
 
     </form>
