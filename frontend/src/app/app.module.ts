@@ -31,6 +31,12 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ClientReadComponent } from './components/client/client-read/client-read.component';
 
+//Importando Schematics 
+import { ClientReadTableComponent } from './components/client/client-read-table/client-read-table.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+
 
 
 
@@ -43,7 +49,8 @@ import { ClientReadComponent } from './components/client/client-read/client-read
     HomeComponent,
     ClientsComponent,
     ClientCreateComponent,
-    ClientReadComponent
+    ClientReadComponent,
+    ClientReadTableComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +65,10 @@ import { ClientReadComponent } from './components/client/client-read/client-read
     HttpClientModule,
     FormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
 
   ],
   providers: [],
