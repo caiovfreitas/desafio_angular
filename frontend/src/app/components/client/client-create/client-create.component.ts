@@ -33,6 +33,7 @@ export class ClientCreateComponent implements OnInit {
 
       this.clientService.create(this.client).subscribe(() => {
         this.clientService.showMessage('Cadastro Realizado')
+        this.router.navigate(['/clients'])
       })
   }
 
