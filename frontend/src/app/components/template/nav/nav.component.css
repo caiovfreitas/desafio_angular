@@ -1,4 +1,5 @@
 .sidenav {
+    height: 100%;
     width: 10%;
 }
 
@@ -7,6 +8,6 @@
 }
 
 .content {
-    height: 845px;
+    height: 100%;
     padding: 16px;
 }

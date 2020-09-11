@@ -1,8 +1,9 @@
 button{
+    margin: 50px;
     margin-top: 20px;
-    margin-left: 15px;
+/*    margin-left: 15px;
     margin-bottom: 30px;
-    align-items: center;
+    align-items: center;*/
     background-color: #e91e63;
 }
 

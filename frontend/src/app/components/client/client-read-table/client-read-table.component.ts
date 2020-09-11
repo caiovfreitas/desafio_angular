@@ -2,6 +2,7 @@ import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTable } from '@angular/material/table';
+import { MatTableDataSource } from '@angular/material/table';
 import { ClientReadTableDataSource } from './client-read-table-datasource';
 import { Client } from '../client.model';
 import { ClientService } from '../client.service';
@@ -21,7 +22,8 @@ export class ClientReadTableComponent implements AfterViewInit, OnInit {
   displayedColumns = ['nome', 'telefone', 'email'];
 
   //Passar os dados do db.json para a tabela. P1
-  clients: Client[]
+  //clients: Client[]
+  clients: MatTableDataSource<Client>
 
   constructor(private clientService: ClientService) { }
 
@@ -29,14 +31,15 @@ export class ClientReadTableComponent implements AfterViewInit, OnInit {
     this.dataSource = new ClientReadTableDataSource();
     //Passar os dados do db.json para a tabela. P2
     this.clientService.read().subscribe(clients => {
-      this.clients = clients
+      this.clients = new MatTableDataSource(clients)
+      this.clients.sort = this.sort;
+      this.clients.paginator = this.paginator;
       console.log(clients)
     });
   }
 
   ngAfterViewInit() {
-    this.dataSource.sort = this.sort;
-    this.dataSource.paginator = this.paginator;
+
     this.table.dataSource = this.dataSource;
   }
 }
