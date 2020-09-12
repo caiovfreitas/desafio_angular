@@ -28,18 +28,23 @@ export class ClientCreateComponent implements OnInit {
 
   createClient(): void {
     if (
-      this.client
-    )
-
-      this.clientService.create(this.client).subscribe(() => {
-        this.clientService.showMessage('Cadastro Realizado')
-        this.router.navigate(['/clients'])
-      })
+      this.client.nome === "" ||
+      this.client.idade === null ||
+      this.client.cpf === null ||
+      this.client.telefone === null ||
+      this.client.email === ""
+    ) {
+      this.clientService.showMessage("Por favor, preencha todos os campos.");
+      return;
+    }
+    this.clientService.create(this.client).subscribe(() => {
+      this.clientService.showMessage('Cadastro Realizado')
+      this.router.navigate(['/clients'])
+    })
   }
 
   cancelClient(): void {
-    this.clientService.showMessage('Limpando Informações')
-    this.router.navigate(['/clients/create'])
+    this.router.navigate(['/clients'])
   }
 
 }
