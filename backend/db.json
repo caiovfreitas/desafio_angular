@@ -47,6 +47,14 @@
       "telefone": "1212121212",
       "email": "teste@gmail.com",
       "id": 6
+    },
+    {
+      "nome": "Patrick Mahomes",
+      "idade": "26",
+      "cpf": "0505500057",
+      "telefone": "4545454545454",
+      "email": "pmahomes@gmail.com",
+      "id": 7
     }
   ]
 }
