@@ -11,11 +11,12 @@
             <input matInput placeholder="Idade" [(ngModel)]="client.idade" name="idade" autocomplete="off" required>
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="CPF" [(ngModel)]="client.cpf" name="cpf" autocomplete="off" required>
+            <input matInput placeholder="CPF" [(ngModel)]="client.cpf" name="cpf" autocomplete="off" required
+                mask="000.000.000-75">
         </mat-form-field>
         <mat-form-field>
             <input matInput placeholder="Telefone" [(ngModel)]="client.telefone" name="telefone" autocomplete="off"
-                required>
+                required mask="(00)00000-0000">
         </mat-form-field>
         <mat-form-field>
             <input matInput placeholder="E-mail" [(ngModel)]="client.email" name="email" autocomplete="off" required>

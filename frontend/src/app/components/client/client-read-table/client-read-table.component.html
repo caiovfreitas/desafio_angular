@@ -29,7 +29,8 @@
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 
 
-    <mat-footer-row *matFooterRowDef="['noData']" [hidden]="dataSource && dataSource.data.length > 0"></mat-footer-row>
+    <mat-footer-row *matFooterRowDef="['noData']" [hidden]="dataSource != noData && dataSource.data.length > 0">
+    </mat-footer-row>
 
   </table>
 

@@ -1,14 +1,14 @@
 .sidenav {
     height: 100%;
-    width: 10%;
-    padding-top: 70px;
+    width: 170px;
+    padding-top: 20px;
 }
 
 .sidenav i {
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
 .content {
     height: 100%;
-    padding: 160px;
+    padding: 100px;
 }
