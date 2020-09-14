@@ -18,19 +18,33 @@
       <td mat-cell *matCellDef="let client">{{client.email}}</td>
     </ng-container>
 
-    <!--Tratativa de Lista Vazia-->
-    <ng-container matColumnDef="noData">
-      <mat-footer-cell *matFooterCellDef colspan="6">
-        Nenhum Cliente Cadastrado.
-      </mat-footer-cell>
+    <!-- Action Column -->
+    <ng-container matColumnDef="acao">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Ação</th>
+      <td mat-cell *matCellDef="let client">
+        <a routerLink="">
+          <i class="material-icons edit">
+            edit
+          </i>
+          <i class="material-icons delete">
+            delete
+          </i>
+        </a>
+      </td>
     </ng-container>
+
+    <!--Tratativa de Lista Vazia-->
+    <!--    <ng-container matColumnDef="noData">-->
+    <!--      <mat-footer-cell *matFooterCellDef colspan="6">-->
+    <!--        Nenhum Cliente Cadastrado.-->
+    <!--      </mat-footer-cell>-->
+    <!--    </ng-container>-->
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 
 
-    <mat-footer-row *matFooterRowDef="['noData']" [ngClass]="{ hide: !(client != null && client.data.length === 0) }">
-    </mat-footer-row>
+    <!--<mat-footer-row *matFooterRowDef="['noData']" [ngClass]="{ hide: !(client != null && client.data.length === 0) }"></mat-footer-row>-->
 
   </table>
 

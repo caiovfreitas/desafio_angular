@@ -19,7 +19,7 @@ export class ClientReadTableComponent implements AfterViewInit, OnInit {
   dataSource: ClientReadTableDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['nome', 'telefone', 'email'];
+  displayedColumns = ['nome', 'telefone', 'email', 'acao'];
 
   //Passar os dados do db.json para a tabela. P1
   //clients: Client[]

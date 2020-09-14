@@ -6,3 +6,11 @@
 .full-width-table {
   width: 100%;
 }
+
+i {
+  color: aliceblue;
+}
+
+i.edit{
+  margin-right: 10px;
+}
