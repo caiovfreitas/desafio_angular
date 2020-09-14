@@ -15,3 +15,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
 .preto {
     background-color: #272727;
 }
+
+.smallbtn { 
+    font-size: 16px;
+}

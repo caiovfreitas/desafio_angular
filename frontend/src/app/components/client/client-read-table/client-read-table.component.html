@@ -29,7 +29,7 @@
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 
 
-    <mat-footer-row *matFooterRowDef="['noData']" [hidden]="dataSource != noData && dataSource.data.length > 0">
+    <mat-footer-row *matFooterRowDef="['noData']" [ngClass]="{ hide: !(client != null && client.data.length === 0) }">
     </mat-footer-row>
 
   </table>
