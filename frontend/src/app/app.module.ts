@@ -36,6 +36,7 @@ import { ClientReadTableComponent } from './components/client/client-read-table/
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { ClientUpdateComponent } from './components/client/client-update/client-update.component';
 
 
 
@@ -50,7 +51,8 @@ import { MatSortModule } from '@angular/material/sort';
     ClientsComponent,
     ClientCreateComponent,
     ClientReadComponent,
-    ClientReadTableComponent
+    ClientReadTableComponent,
+    ClientUpdateComponent
   ],
   imports: [
     BrowserModule,

@@ -11,6 +11,6 @@ i {
   color: aliceblue;
 }
 
-i.edit{
+.edit i{
   margin-right: 10px;
 }
