@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Client } from '../client.model';
+import { ClientService } from '../client.service';
 
 @Component({
   selector: 'app-client-update',
@@ -7,9 +10,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientUpdateComponent implements OnInit {
 
-  constructor() { }
+  client: Client
+
+  constructor(private clientService: ClientService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    const id = this.route.snapshot.paramMap.get('id')
+    this.clientService.readById(id).subscribe(client => {
+      this.client = client
+    })
   }
 
+  updateClient(): void {
+    this.clientService.update(this.client).subscribe(() => {
+      this.clientService.showMessage('Dados Atualizados')
+      this.router.navigate(['/clients'])
+    })
+  }
+
+  cancelClient(): void {
+    this.router.navigate(['/clients'])
+  }
 }

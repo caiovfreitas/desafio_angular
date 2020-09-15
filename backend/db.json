@@ -2,7 +2,7 @@
   "cliente": [
     {
       "id": 1,
-      "nome": "Caio",
+      "nome": "Caio Freitas",
       "idade": 24,
       "cpf": 18960718475,
       "telefone": 998308550,
@@ -41,7 +41,7 @@
       "id": 5
     },
     {
-      "nome": "Teste",
+      "nome": "TesteD",
       "idade": "52",
       "cpf": "12121212121",
       "telefone": "1212121212",

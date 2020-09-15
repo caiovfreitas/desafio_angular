@@ -1,1 +1,35 @@
-<p>client-update works!</p>
+<mat-card>
+    <mat-card-title>Alterar Cliente</mat-card-title>
+    <mat-card-subtitle>Preencha os dados abaixo para alterar os dados de um cliente no sistema.</mat-card-subtitle>
+    <form>
+
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="client.nome" name="nome" autocomplete="off"
+                autocapitalize="on" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Idade" [(ngModel)]="client.idade" name="idade" autocomplete="off" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="CPF" [(ngModel)]="client.cpf" name="cpf" autocomplete="off" required
+                mask="000.000.000-75">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Telefone" [(ngModel)]="client.telefone" name="telefone" autocomplete="off"
+                required mask="(00)00000-0000">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="E-mail" [(ngModel)]="client.email" name="email" autocomplete="off" required>
+        </mat-form-field>
+
+    </form>
+
+    <button class="btnLimpar smallbtn" mat-raised-button (click)="cancelClient()">
+        Cancelar
+    </button>
+
+    <button class="btnCadastrar smallbtn" mat-raised-button (click)="updateClient()">
+        Salvar
+    </button>
+
+</mat-card>
