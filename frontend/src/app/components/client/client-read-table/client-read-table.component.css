@@ -14,3 +14,23 @@ i {
 .edit i{
   margin-right: 10px;
 }
+
+button {
+  cursor: not-allowed;
+  pointer-events: none;
+  margin: 15px;
+  max-height: 40px;
+}
+
+button:disabled,button[disabled=disabled] {
+  background-color: #e91e31
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+  /*change color of label*/
+  color: #e91e63 !important;
+ }
+
+::ng-deep.mat-form-field-ripple {
+  background-color: #e91e63 !important;
+}

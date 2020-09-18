@@ -25,6 +25,8 @@ export class ClientReadTableComponent implements AfterViewInit, OnInit {
   //clients: Client[]
   clients: MatTableDataSource<Client>
 
+  searchKey: string;
+
   constructor(private clientService: ClientService) { }
 
   ngOnInit() {
@@ -36,6 +38,10 @@ export class ClientReadTableComponent implements AfterViewInit, OnInit {
       this.clients.paginator = this.paginator;
       console.log(clients)
     });
+  }
+
+  applyFilter() {
+    this.clients.filter = this.searchKey.trim().toLocaleLowerCase();
   }
 
   ngAfterViewInit() {

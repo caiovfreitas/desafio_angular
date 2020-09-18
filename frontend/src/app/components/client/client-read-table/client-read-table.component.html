@@ -1,4 +1,13 @@
 <div class="tabela mat-elevation-z8">
+  <div class="search-div">
+    <button mat-raised-button class="rosa" id="create_btn">
+      <i class="material-icons">person_search</i>
+    </button>
+    <mat-form-field class="search-form-field" floatLabel="never">
+      <input matInput [(ngModel)]="searchKey" placeholder="Buscar por Nome ou CPF" autocomplete="off"
+        (keyup)="applyFilter()" />
+    </mat-form-field>
+  </div>
   <table mat-table class="full-width-table" [dataSource]='clients' matSort>
     <!-- Nome Column -->
     <ng-container matColumnDef="nome">

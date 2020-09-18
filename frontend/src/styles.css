@@ -11,6 +11,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
     color: #e0e0e0;
 }
 
+.letraRosa{
+    color: #e91e63;
+}
+
 .rosa {
     background-color: #e91e63;
 }
