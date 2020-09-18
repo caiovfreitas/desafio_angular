@@ -37,6 +37,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { ClientUpdateComponent } from './components/client/client-update/client-update.component';
+import { ClientDeleteComponent } from './components/client/client-delete/client-delete.component';
 
 
 
@@ -52,7 +53,8 @@ import { ClientUpdateComponent } from './components/client/client-update/client-
     ClientCreateComponent,
     ClientReadComponent,
     ClientReadTableComponent,
-    ClientUpdateComponent
+    ClientUpdateComponent,
+    ClientDeleteComponent
   ],
   imports: [
     BrowserModule,

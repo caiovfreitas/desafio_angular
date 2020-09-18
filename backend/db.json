@@ -33,28 +33,20 @@
       "id": 4
     },
     {
-      "nome": "Zé",
-      "idade": "21",
-      "cpf": "22222222222",
-      "telefone": "222222222",
-      "email": "ze@gml.com",
-      "id": 5
-    },
-    {
-      "nome": "TesteD",
-      "idade": "52",
-      "cpf": "12121212121",
-      "telefone": "1212121212",
-      "email": "teste@gmail.com",
-      "id": 6
-    },
-    {
       "nome": "Patrick Mahomes",
       "idade": "26",
       "cpf": "0505500057",
       "telefone": "4545454545454",
       "email": "pmahomes@gmail.com",
       "id": 7
+    },
+    {
+      "nome": "Ana Julia",
+      "idade": "14",
+      "cpf": "098120938109238",
+      "telefone": "0938109823",
+      "email": "aninha@gmail.com",
+      "id": 8
     }
   ]
 }

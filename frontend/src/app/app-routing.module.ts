@@ -1,3 +1,4 @@
+import { ClientDeleteComponent } from './components/client/client-delete/client-delete.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -21,6 +22,10 @@ const routes: Routes = [{
 {
   path: "clients/update/:id",
   component: ClientUpdateComponent
+},
+{
+  path: "clients/delete/:id",
+  component: ClientDeleteComponent
 }
 
 ];
