@@ -1,3 +1,4 @@
+import { HeaderService } from './../../template/header/header.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { ClientService } from './../client.service';
 import { Client } from './../client.model';
@@ -12,7 +13,12 @@ export class ClientDeleteComponent implements OnInit {
 
   client: Client;
 
-  constructor(private clientService: ClientService, private router: Router, private route: ActivatedRoute) { }
+  constructor(private clientService: ClientService, private router: Router, private route: ActivatedRoute, private headerService: HeaderService) {
+    headerService.headerData = {
+      title: 'Exclusão de Cliente',
+      routeUrl: '/clients/delete'
+    }
+  }
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id');

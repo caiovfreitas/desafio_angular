@@ -5,7 +5,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
 
 .cinza {
     background-color: #e0e0e0;
-    
+}
+
+.letraCinza{
+    color: #e0e0e0;
 }
 
 .rosa {

@@ -1,3 +1,4 @@
+import { HeaderService } from './../../template/header/header.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Client } from '../client.model';
@@ -12,7 +13,12 @@ export class ClientUpdateComponent implements OnInit {
 
   client: Client
 
-  constructor(private clientService: ClientService, private router: Router, private route: ActivatedRoute) { }
+  constructor(private clientService: ClientService, private router: Router, private route: ActivatedRoute, private headerService: HeaderService) {
+    headerService.headerData = {
+      title: 'Informação de Cliente',
+      routeUrl: '/clients/update'
+    }
+  }
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id')

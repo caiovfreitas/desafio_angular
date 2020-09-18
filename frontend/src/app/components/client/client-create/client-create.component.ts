@@ -1,3 +1,4 @@
+import { HeaderService } from './../../template/header/header.service';
 import { Client } from './../client.model';
 import { ClientService } from './../client.service';
 import { Component, OnInit } from '@angular/core';
@@ -20,7 +21,13 @@ export class ClientCreateComponent implements OnInit {
   }
 
   constructor(private clientService: ClientService,
-    private router: Router) { }
+    private router: Router,
+    private headerService: HeaderService) {
+    headerService.headerData = {
+      title: 'Cadastro de Cliente',
+      routeUrl: '/clients/create'
+    }
+  }
 
   ngOnInit(): void {
 
